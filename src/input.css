@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(../Fonts/Poppins-Medium.ttf);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 7%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 100;
+    box-shadow: 3px 8px 22px rgba(49, 19, 37, 0.2);
+    /*background: #fff;*/
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+.navbar ul li a:hover{
+    color: #ff57ff;
+}
+.navbar ul li.menu{
+    position: relative;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(228, 43, 235);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 15px;
+}

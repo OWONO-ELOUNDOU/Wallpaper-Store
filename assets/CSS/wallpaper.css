@@ -1,0 +1,26 @@
+.wallpaper-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wallpaper-box .box-btn{
+    display: inline-block;
+}
+.wallpaper-box .box-btn button{
+    margin-right: 15px;
+    font-size: 50px;
+    font-weight: lighter;
+    background: #fff;
+    color: #777;
+    position: relative;
+}
+.btn{
+    top: 190px;
+    left: 300px;
+    position: absolute;
+    width: 110px;
+    height: 10px;
+    background: #F35bbb;
+    border-radius: 30px;
+    transition: .5s;
+}

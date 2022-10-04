@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/register.css">
+</head>
+<body>
+    
+    <header>
+        <img src="assets/Images/logo.png" class="logo">
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="openPopup()">About Us</a></li>
+                <div class="popup" id="popup">
+                    <span class="user-icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <h2>About US</h2>
+                    <p>I'm a student, beginner in Web development and this is one of my web design.
+                        I actually have others works on my github account. Kindly have a look on them.
+                    </p>
+                    <a href="https://github.com/OWONO-ELOUNDOU/Web-development.git" target="BLANK">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <button type="button" onclick="closePopup()"><i class="fas fa-times"></i></button>
+                </div>
+                <li><a href="#" class="menu" id="menu" onclick="display()">Category</a></li>
+                <div class="sub-menu" id="submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Animes Wallpapers</a>
+                        </li>
+                        <li>
+                            <a href="#">Brands and logos Wallpapers</a>
+                        </li>
+                        <li>
+                            <a href="#">Black Wallpapers</a>
+                        </li>
+                    </ul>
+                </div>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <a href="#"><button type="button">Register</button></a>
+    </header>
+
+    <div id="login-form" class="login-page">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" onclick="login()" class="toggle-btn">Login</button>
+                <button type="button" onclick="register()" class="toggle-btn">Register</button>
+            </div>
+            <form id="login" class="input-group-login">
+                <input type="text" class="input-field" placeholder="Email Id">
+                <input type="password" class="input-field" placeholder="Password">
+                <input type="checkbox" class="check-box"><span>Remember my password</span>
+                <button type="submit" class="submit-btn">Log-in</button>
+            </form>
+            <form id="register" class="input-group-register">
+                <div class="name-box">
+                    <input type="text" class="input-field" placeholder="First name" required>
+                    <input type="text" class="input-field" placeholder="Last name" required>
+                </div>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" class="input-field" placeholder="Enter a password" required>
+                <input type="password" class="input-field" placeholder="confirm password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="assets/JS/app.js"></script>
+    <script src="assets/JS/register_login.js"></script>
+</body>
+</html>
